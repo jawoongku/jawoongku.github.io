@@ -1,33 +1,48 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>My New Hugo Site</title>
-    <link>https://example.org/</link>
+    <link>https://jawoongku.github.io/</link>
     <description>Recent content on My New Hugo Site</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- 0.143.1</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 10 Feb 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jawoongku.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>testetest</title>
-      <link>https://example.org/post/0wvrz5_ygf4/</link>
+      <link>https://jawoongku.github.io/post/0wvrz5_ygf4/</link>
       <pubDate>Mon, 10 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://example.org/post/0wvrz5_ygf4/</guid>
-      <description>&lt;h1 id=&#34;럭셔리-오디오의-새로운-혁신-캠브릿지-오디오-에보-1-리뷰&#34;&gt;럭셔리 오디오의 새로운 혁신, 캠브릿지 오디오 에보 1 리뷰&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;Introduction:&lt;/strong&gt; 이번 포스팅에서는 캠브릿지 오디오 에보 1이라는 신제품에 대한 자세한 리뷰를 제공합니다. 이 제품은 고성능 오디오를 찾는 이들에게 적합하며, 편리함과 뛰어난 음질을 동시에 제공합니다. 디자인도 세련되어 인테리어 효과를 기대할 수 있는 제품입니다. 각 섹션에서 제품의 특징과 사용 경험을 살펴보겠습니다.&lt;/p&gt;&#xA;&lt;h2 id=&#34;제품소개&#34;&gt;제품소개&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;오디오 리뷰 시리즈의 첫 번째 제품으로 소개됨&lt;/li&gt;&#xA;&lt;li&gt;영국의 오디오 브랜드인 캠브릿지 오디오의 새로운 제품&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Summary:&lt;/strong&gt; 오늘은 캠브릿지 오디오의 새로운 오리원 오디오인 에보 1을 처음 리뷰합니다.&lt;/p&gt;</description>
+      <guid>https://jawoongku.github.io/post/0wvrz5_ygf4/</guid>
+      <description>&lt;h1 id=&#34;럭셔리-오디오의-새로운-혁신-캠브릿지-오디오-에보-1-리뷰&#34;&gt;럭셔리 오디오의 새로운 혁신, 캠브릿지 오디오 에보 1 리뷰&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Introduction:&lt;/strong&gt; 이번 포스팅에서는 캠브릿지 오디오 에보 1이라는 신제품에 대한 자세한 리뷰를 제공합니다. 이 제품은 고성능 오디오를 찾는 이들에게 적합하며, 편리함과 뛰어난 음질을 동시에 제공합니다. 디자인도 세련되어 인테리어 효과를 기대할 수 있는 제품입니다. 각 섹션에서 제품의 특징과 사용 경험을 살펴보겠습니다.&lt;/p&gt;
+&lt;h2 id=&#34;제품소개&#34;&gt;제품소개&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;오디오 리뷰 시리즈의 첫 번째 제품으로 소개됨&lt;/li&gt;
+&lt;li&gt;영국의 오디오 브랜드인 캠브릿지 오디오의 새로운 제품&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Summary:&lt;/strong&gt; 오늘은 캠브릿지 오디오의 새로운 오리원 오디오인 에보 1을 처음 리뷰합니다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>My first Post</title>
-      <link>https://example.org/post/my-first-post/</link>
+      <link>https://jawoongku.github.io/post/my-first-post/</link>
       <pubDate>Sun, 09 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://example.org/post/my-first-post/</guid>
-      <description>&lt;p&gt;여기에 글 내용을 작성하세요!&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Hugo로 블로그를 운영하기 쉽다.&lt;/li&gt;&#xA;&lt;li&gt;빠르게 정적 사이트를 생성할 수 있다.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <guid>https://jawoongku.github.io/post/my-first-post/</guid>
+      <description>&lt;p&gt;여기에 글 내용을 작성하세요!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Hugo로 블로그를 운영하기 쉽다.&lt;/li&gt;
+&lt;li&gt;빠르게 정적 사이트를 생성할 수 있다.&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>My second Post</title>
-      <link>https://example.org/post/my-second-post/</link>
+      <link>https://jawoongku.github.io/post/my-second-post/</link>
       <pubDate>Sun, 09 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://example.org/post/my-second-post/</guid>
-      <description>&lt;p&gt;여기에 글 내용을 작성하세요!&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Hugo로 블로그를 운영하기 쉽다.&lt;/li&gt;&#xA;&lt;li&gt;빠르게 정적 사이트를 생성할 수 있다.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <guid>https://jawoongku.github.io/post/my-second-post/</guid>
+      <description>&lt;p&gt;여기에 글 내용을 작성하세요!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Hugo로 블로그를 운영하기 쉽다.&lt;/li&gt;
+&lt;li&gt;빠르게 정적 사이트를 생성할 수 있다.&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
