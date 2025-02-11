@@ -1,359 +1,520 @@
 <!DOCTYPE html>
-<html lang="en-us" dir="ltr">
-    <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="아이패드와 아이폰을 보조 모니터로 활용하는 꿀팁!\nIntroduction: 본 포스트에서는 구형 아이패드 및 아이폰을 보조 모니터로 활용하는 방법을 소개합니다. 스페이스 데스크(SpaceDesk)라는 애플리케이션을 사용해 Windows PC와 연결하는 방법을 알아보세요.\n모니터 활용의 필요성 모니터를 추가로 사용하고 싶어하는 사용자들이 많음 업무와 학업 시 보조 모니터의 필요성 증가 Summary: 다다익선의 모니터 배치를 통해 효율성을 높일 수 있습니다. 개인의 환경에 맞는 모니터 활용법을 찾아보세요!\n스페이스 데스크(SpaceDesk) 소개 이전 사용하던 아이폰, 아이패드를 모니터로 활용 가능 무료로 앱을 다운로드하여 사용 가능 Summary: 스페이스 데스크 앱을 통해 집안의 구형 모바일 기기를 보조 모니터로 활용할 수 있습니다. 비용 걱정 없이 더 나은 작업 환경을 구축하세요!\n">
-<title>아이패드와 아이폰을 보조 모니터로 활용하는 꿀팁!</title>
+<html lang="en-us"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아이패드와 아이폰을 보조 모니터로 활용하는 꿀팁! | YOUTUBE SUMMARY - TIL</title>
 
-<link rel='canonical' href='https://jawoongku.github.io/post/z88888/'>
+    
 
-<link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="아이패드와 아이폰을 보조 모니터로 활용하는 꿀팁!">
-<meta property='og:description' content="아이패드와 아이폰을 보조 모니터로 활용하는 꿀팁!\nIntroduction: 본 포스트에서는 구형 아이패드 및 아이폰을 보조 모니터로 활용하는 방법을 소개합니다. 스페이스 데스크(SpaceDesk)라는 애플리케이션을 사용해 Windows PC와 연결하는 방법을 알아보세요.\n모니터 활용의 필요성 모니터를 추가로 사용하고 싶어하는 사용자들이 많음 업무와 학업 시 보조 모니터의 필요성 증가 Summary: 다다익선의 모니터 배치를 통해 효율성을 높일 수 있습니다. 개인의 환경에 맞는 모니터 활용법을 찾아보세요!\n스페이스 데스크(SpaceDesk) 소개 이전 사용하던 아이폰, 아이패드를 모니터로 활용 가능 무료로 앱을 다운로드하여 사용 가능 Summary: 스페이스 데스크 앱을 통해 집안의 구형 모바일 기기를 보조 모니터로 활용할 수 있습니다. 비용 걱정 없이 더 나은 작업 환경을 구축하세요!\n">
-<meta property='og:url' content='https://jawoongku.github.io/post/z88888/'>
-<meta property='og:site_name' content='YOUTUBE SUMMARY - TIL'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-02-10T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-02-10T00:00:00&#43;00:00'/>
-<meta name="twitter:title" content="아이패드와 아이폰을 보조 모니터로 활용하는 꿀팁!">
-<meta name="twitter:description" content="아이패드와 아이폰을 보조 모니터로 활용하는 꿀팁!\nIntroduction: 본 포스트에서는 구형 아이패드 및 아이폰을 보조 모니터로 활용하는 방법을 소개합니다. 스페이스 데스크(SpaceDesk)라는 애플리케이션을 사용해 Windows PC와 연결하는 방법을 알아보세요.\n모니터 활용의 필요성 모니터를 추가로 사용하고 싶어하는 사용자들이 많음 업무와 학업 시 보조 모니터의 필요성 증가 Summary: 다다익선의 모니터 배치를 통해 효율성을 높일 수 있습니다. 개인의 환경에 맞는 모니터 활용법을 찾아보세요!\n스페이스 데스크(SpaceDesk) 소개 이전 사용하던 아이폰, 아이패드를 모니터로 활용 가능 무료로 앱을 다운로드하여 사용 가능 Summary: 스페이스 데스크 앱을 통해 집안의 구형 모바일 기기를 보조 모니터로 활용할 수 있습니다. 비용 걱정 없이 더 나은 작업 환경을 구축하세요!\n">
-    </head>
-    <body class="
-    article-page
-    ">
-    <script>
-        (function() {
-            const colorSchemeKey = 'StackColorScheme';
-            if(!localStorage.getItem(colorSchemeKey)){
-                localStorage.setItem(colorSchemeKey, "auto");
-            }
-        })();
-    </script><script>
-    (function() {
-        const colorSchemeKey = 'StackColorScheme';
-        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
-        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+<link rel="canonical" href="https://jawoongku.github.io/post/z88888/" />
 
-        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
-            
 
-            document.documentElement.dataset.scheme = 'dark';
-        } else {
-            document.documentElement.dataset.scheme = 'light';
-        }
-    })();
-</script>
-<div class="container main-container flex on-phone--column compact"><aside class="sidebar left-sidebar sticky ">
-    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
-        <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-        </span>
-    </button>
 
-    <header>
-        
-            
-            <figure class="site-avatar">
-                <a href="/">
-                
-                    
-                    
-                    
-                        
-                        <img src="/img/avatar_hu_f509edb42ecc0ebd.png" width="300"
-                            height="300" class="site-logo" loading="lazy" alt="Avatar">
-                    
-                
-                </a>
-                
-            </figure>
-            
-        
-        
-        <div class="site-meta">
-            <h1 class="site-name"><a href="/">YOUTUBE SUMMARY - TIL</a></h1>
-            <h2 class="site-description"></h2>
+<meta name="author" content="" />
+<meta name="description" content="" />
+
+
+
+<meta name="generator" content="Hugo 0.143.1">
+
+
+<meta property="og:url" content="https://jawoongku.github.io/post/z88888/">
+  <meta property="og:site_name" content="YOUTUBE SUMMARY - TIL">
+  <meta property="og:title" content="아이패드와 아이폰을 보조 모니터로 활용하는 꿀팁!">
+  <meta property="og:description" content="아이패드와 아이폰을 보조 모니터로 활용하는 꿀팁!
+Introduction: 본 포스트에서는 구형 아이패드 및 아이폰을 보조 모니터로 활용하는 방법을 소개합니다. 스페이스 데스크(SpaceDesk)라는 애플리케이션을 사용해 Windows PC와 연결하는 방법을 알아보세요.
+모니터 활용의 필요성 모니터를 추가로 사용하고 싶어하는 사용자들이 많음 업무와 학업 시 보조 모니터의 필요성 증가 Summary: 다다익선의 모니터 배치를 통해 효율성을 높일 수 있습니다. 개인의 환경에 맞는 모니터 활용법을 찾아보세요!
+스페이스 데스크(SpaceDesk) 소개 이전 사용하던 아이폰, 아이패드를 모니터로 활용 가능 무료로 앱을 다운로드하여 사용 가능 Summary: 스페이스 데스크 앱을 통해 집안의 구형 모바일 기기를 보조 모니터로 활용할 수 있습니다. 비용 걱정 없이 더 나은 작업 환경을 구축하세요!">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2025-02-10T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-02-10T00:00:00+00:00">
+
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="아이패드와 아이폰을 보조 모니터로 활용하는 꿀팁!">
+  <meta name="twitter:description" content="아이패드와 아이폰을 보조 모니터로 활용하는 꿀팁!
+Introduction: 본 포스트에서는 구형 아이패드 및 아이폰을 보조 모니터로 활용하는 방법을 소개합니다. 스페이스 데스크(SpaceDesk)라는 애플리케이션을 사용해 Windows PC와 연결하는 방법을 알아보세요.
+모니터 활용의 필요성 모니터를 추가로 사용하고 싶어하는 사용자들이 많음 업무와 학업 시 보조 모니터의 필요성 증가 Summary: 다다익선의 모니터 배치를 통해 효율성을 높일 수 있습니다. 개인의 환경에 맞는 모니터 활용법을 찾아보세요!
+스페이스 데스크(SpaceDesk) 소개 이전 사용하던 아이폰, 아이패드를 모니터로 활용 가능 무료로 앱을 다운로드하여 사용 가능 Summary: 스페이스 데스크 앱을 통해 집안의 구형 모바일 기기를 보조 모니터로 활용할 수 있습니다. 비용 걱정 없이 더 나은 작업 환경을 구축하세요!">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="Flip it!">
+        <div class="h-10 rounded-full">
+          <img src="/" alt="" />
         </div>
-    </header><ol class="menu" id="main-menu">
+      </div>
+
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
         
-        
-        <li class="menu-bottom-section">
-            <ol class="menu">
-
-                
-                    <li id="dark-mode-toggle">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="8" cy="12" r="2" />
-  <rect x="2" y="6" width="20" height="12" rx="6" />
-</svg>
 
 
 
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="16" cy="12" r="2" />
-  <rect x="2" y="6" width="20" height="12" rx="6" />
-</svg>
 
 
 
-                        <span>Dark Mode</span>
-                    </li>
-                
-            </ol>
-        </li>
-    </ol>
-</aside>
 
-    
 
-            <main class="main full-width">
-    <article class="main-article">
-    <header class="article-header">
 
-    <div class="article-details">
-    
 
-    <div class="article-title-wrapper">
-        <h2 class="article-title">
-            <a href="/post/z88888/">아이패드와 아이폰을 보조 모니터로 활용하는 꿀팁!</a>
-        </h2>
-    
-        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </ul>
     </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
 
+      
+      
+
+      
+
+      
+      
+
+
+
+
+
+      
+      
+
+
+
+
+
+      
+      
+
+
+
+
+
+      
+      
+
+
+
+
+
+      
+      
+
+
+
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="lg:grid lg:grid-cols-4 gap-4 mt-4 px-4">
+  <div class="hidden lg:block">
     
-    
-    
-    
-    <footer class="article-time">
+  </div>
+
+  <div class="lg:col-span-2">
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="아이패드와 아이폰을 보조 모니터로 활용하는 꿀팁!">
+  <meta itemprop="description" content="아이패드와 아이폰을 보조 모니터로 활용하는 꿀팁!
+Introduction: 본 포스트에서는 구형 아이패드 및 아이폰을 보조 모니터로 활용하는 방법을 소개합니다. 스페이스 데스크(SpaceDesk)라는 애플리케이션을 사용해 Windows PC와 연결하는 방법을 알아보세요.
+모니터 활용의 필요성 모니터를 추가로 사용하고 싶어하는 사용자들이 많음 업무와 학업 시 보조 모니터의 필요성 증가 Summary: 다다익선의 모니터 배치를 통해 효율성을 높일 수 있습니다. 개인의 환경에 맞는 모니터 활용법을 찾아보세요!
+스페이스 데스크(SpaceDesk) 소개 이전 사용하던 아이폰, 아이패드를 모니터로 활용 가능 무료로 앱을 다운로드하여 사용 가능 Summary: 스페이스 데스크 앱을 통해 집안의 구형 모바일 기기를 보조 모니터로 활용할 수 있습니다. 비용 걱정 없이 더 나은 작업 환경을 구축하세요!">
+  <meta itemprop="datePublished" content="2025-02-10T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-02-10T00:00:00+00:00">
+  <meta itemprop="wordCount" content="325">
+
+      <header>
+        <h1 itemprop="headline">아이패드와 아이폰을 보조 모니터로 활용하는 꿀팁!</h1>
+        <p class="text-sm">
+          
+            Monday, Feb 10, 2025
+          
+
+          | <span>2 minute read</span>
+
+          
+          | <span>Updated at
+            
+              Monday, Feb 10, 2025
+            </span>
+          
+        </p>
+
         
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
-  <circle cx="18" cy="18" r="4" />
-  <path d="M15 3v4" />
-  <path d="M7 3v4" />
-  <path d="M3 11h16" />
-  <path d="M18 16.496v1.504l1 1" />
-</svg>
-                <time class="article-time--published">Feb 10, 2025</time>
-            </div>
-        
+        <div class="flex justify-between">
+          
 
-        
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="12" r="9" />
-  <polyline points="12 7 12 12 15 15" />
-</svg>
+          <div class="flex items-center gap-2">
+  
+  
 
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%ec%95%84%ec%9d%b4%ed%8c%a8%eb%93%9c%ec%99%80%20%ec%95%84%ec%9d%b4%ed%8f%b0%ec%9d%84%20%eb%b3%b4%ec%a1%b0%20%eb%aa%a8%eb%8b%88%ed%84%b0%eb%a1%9c%20%ed%99%9c%ec%9a%a9%ed%95%98%eb%8a%94%20%ea%bf%80%ed%8c%81!&amp;url=https://jawoongku.github.io/post/z88888/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://jawoongku.github.io/post/z88888/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%ec%95%84%ec%9d%b4%ed%8c%a8%eb%93%9c%ec%99%80%20%ec%95%84%ec%9d%b4%ed%8f%b0%ec%9d%84%20%eb%b3%b4%ec%a1%b0%20%eb%aa%a8%eb%8b%88%ed%84%b0%eb%a1%9c%20%ed%99%9c%ec%9a%a9%ed%95%98%eb%8a%94%20%ea%bf%80%ed%8c%81!%20https://jawoongku.github.io/post/z88888/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
 
-
-                <time class="article-time--reading">
-                    2 minute read
-                </time>
-            </div>
-        
-    </footer>
-    
-
-    
+  
+  
 </div>
 
-</header>
+        </div>
+      </header>
 
-    <section class="article-content">
-    
-    
-    <p>아이패드와 아이폰을 보조 모니터로 활용하는 꿀팁!</p>
+      <section id="dream-single-post-content" itemprop="articleBody">
+        
+
+        <p>아이패드와 아이폰을 보조 모니터로 활용하는 꿀팁!</p>
 <p><strong>Introduction:</strong> 본 포스트에서는 구형 아이패드 및 아이폰을 보조 모니터로 활용하는 방법을 소개합니다. 스페이스 데스크(SpaceDesk)라는 애플리케이션을 사용해 Windows PC와 연결하는 방법을 알아보세요.</p>
-<h2 id="모니터-활용의-필요성">모니터 활용의 필요성
-</h2><ul>
+<h2 id="모니터-활용의-필요성">모니터 활용의 필요성</h2>
+<ul>
 <li>모니터를 추가로 사용하고 싶어하는 사용자들이 많음</li>
 <li>업무와 학업 시 보조 모니터의 필요성 증가</li>
 </ul>
 <p><strong>Summary:</strong> 다다익선의 모니터 배치를 통해 효율성을 높일 수 있습니다. 개인의 환경에 맞는 모니터 활용법을 찾아보세요!</p>
-<h2 id="스페이스-데스크spacedesk-소개">스페이스 데스크(SpaceDesk) 소개
-</h2><ul>
+<h2 id="스페이스-데스크spacedesk-소개">스페이스 데스크(SpaceDesk) 소개</h2>
+<ul>
 <li>이전 사용하던 아이폰, 아이패드를 모니터로 활용 가능</li>
 <li>무료로 앱을 다운로드하여 사용 가능</li>
 </ul>
 <p><strong>Summary:</strong> 스페이스 데스크 앱을 통해 집안의 구형 모바일 기기를 보조 모니터로 활용할 수 있습니다. 비용 걱정 없이 더 나은 작업 환경을 구축하세요!</p>
-<h2 id="연결-설정-과정">연결 설정 과정
-</h2><ul>
+<h2 id="연결-설정-과정">연결 설정 과정</h2>
+<ul>
 <li>윈도우 PC에 드라이버 설치 후 기기 연결</li>
 <li>스페이스 데스크 드라이버 실행으로 자동 연결</li>
 </ul>
 <p><strong>Summary:</strong> 기기를 간편하게 연결하기 위해 스페이스 데스크 드라이버를 설치하는 것부터 시작하세요. 설정이 완료되면 서로의 네트워크를 자동으로 인식합니다!</p>
-<h2 id="usb-연결-지원">USB 연결 지원
-</h2><ul>
+<h2 id="usb-연결-지원">USB 연결 지원</h2>
+<ul>
 <li>아이폰 및 아이패드는 USB로도 연결 가능</li>
 <li>안드로이드 기기는 설정이 복잡할 수 있음</li>
 </ul>
 <p><strong>Summary:</strong> 아이폰과 아이패드는 USB 연결이 가능합니다. USB로 연결 시 안정적인 사용이 가능해 다양한 작업에 유용합니다!</p>
-<h2 id="화질-및-성능-설정">화질 및 성능 설정
-</h2><ul>
+<h2 id="화질-및-성능-설정">화질 및 성능 설정</h2>
+<ul>
 <li>화질 설정을 통해 선명한 화면 구현 가능</li>
 <li>퍼포먼스에 따라 설정을 조절하여 사용</li>
 </ul>
 <p><strong>Summary:</strong> 화질 설정을 통해 사용자의 필요에 맞게 화면 품질을 조절하고, 작업의 효율성을 높일 수 있습니다.</p>
-<h2 id="다중-화면-사용의-장점">다중 화면 사용의 장점
-</h2><ul>
+<h2 id="다중-화면-사용의-장점">다중 화면 사용의 장점</h2>
+<ul>
 <li>여러 대의 기기를 통해 다양한 작업 환경 생성 가능</li>
 <li>모니터 개수에 따라 작업 효율성 증대</li>
 </ul>
 <p><strong>Summary:</strong> 다양한 모니터를 활용하여 작업 공간을 최적화하고, 여러 프로그램을 동시에 사용할 수 있는 환경을 만들어 보세요!</p>
-<h2 id="결론-및-활용-방법">결론 및 활용 방법
-</h2><ul>
+<h2 id="결론-및-활용-방법">결론 및 활용 방법</h2>
+<ul>
 <li>무료로 제공되는 스페이스 데스크의 활용</li>
 <li>아이패드와 구형 아이폰의 재사용</li>
 </ul>
 <p><strong>Summary:</strong> 스페이스 데스크를 통해 구형 아이패드와 아이폰을 보조 모니터로 활용하면 작업 환경을 개선할 수 있습니다. 재사용의 가치를 느껴보세요!</p>
-<h2 id="마무리">마무리
-</h2><ul>
+<h2 id="마무리">마무리</h2>
+<ul>
 <li>각자 경험에 기반하여 활용 정리</li>
 <li>사용자 맞춤형 사용법 추천</li>
 </ul>
 <p><strong>Summary:</strong> 각자의 경험을 통해 보조 모니터 활용법을 최적화하고, 보다 나은 작업 성과를 이루어보세요!</p>
-<h2 id="고민할-필요-없는-보조-모니터-활용법">고민할 필요 없는 보조 모니터 활용법
-</h2><ul>
+<h2 id="고민할-필요-없는-보조-모니터-활용법">고민할 필요 없는 보조 모니터 활용법</h2>
+<ul>
 <li>무료 앱 활용해 저비용으로 생산성 향상</li>
 <li>모바일 기기의 새로운 활용법 제시</li>
 </ul>
 <p><strong>Summary:</strong> 스페이스 데스크의 도움으로 보조 모니터 없이도 높은 생산성을 체험할 수 있습니다. 구형 모바일 기기가 다시 태어나는 순간을 경험해 보세요!</p>
 <p><strong>Tags:</strong> #스페이스데스크 #아이패드 #아이폰 #보조모니터 #업무효율 #무료앱 #모니터 활용 #덴드21778</p>
 
-</section>
 
-
-    <footer class="article-footer">
-    
-
-    </footer>
-
-
-    
-</article>
-
-    
-
-    
-
-     
-    
         
-    
+      </section>
 
-    <footer class="site-footer">
-    <section class="copyright">
-        &copy; 
-        
-        2025 YOUTUBE SUMMARY - TIL
-    </section>
+      
+
+      
+    </article>
+  </div>
+
+  <div class="hidden lg:flex lg:flex-col lg:items-end">
     
-    <section class="powerby">
-        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
-    </section>
+  </div>
+</div>
+
+
+            
+<footer class="flex justify-between items-center gap-2 px-4 py-12">
+
+  <div>
+  
+  <p>© 2025 YOUTUBE SUMMARY - TIL</p>
+  
+
+  
+  <p class="text-sm">
+    🌱
+    <span class="text-base-content/60">
+      Powered by <a class="hover:underline" href="https://gohugo.io/" target="_blank">Hugo</a> with theme
+      <a class="hover:underline" href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</span
+    >
+  </p>
+  
+</div>
+
+  <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center gap-2 h-[32px] px-2 bg-base-100 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
 </footer>
 
-
-    
-<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-    
-    <div class="pswp__bg"></div>
-
-    
-    <div class="pswp__scroll-wrap">
-
-        
-        <div class="pswp__container">
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
+          </div>
         </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid dream-grid-about">
+  
 
-        
-        <div class="pswp__ui pswp__ui--hidden">
+  
 
-            <div class="pswp__top-bar">
+  
+</div>
 
-                
+            
 
-                <div class="pswp__counter"></div>
+            
+<footer class="flex justify-between items-center gap-2 px-4 py-12">
 
-                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+  <div>
+  
+  <p>© 2025 YOUTUBE SUMMARY - TIL</p>
+  
 
-                <button class="pswp__button pswp__button--share" title="Share"></button>
+  
+  <p class="text-sm">
+    🌱
+    <span class="text-base-content/60">
+      Powered by <a class="hover:underline" href="https://gohugo.io/" target="_blank">Hugo</a> with theme
+      <a class="hover:underline" href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</span
+    >
+  </p>
+  
+</div>
 
-                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+  <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center gap-2 h-[32px] px-2 bg-base-100 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
 
-                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+</footer>
 
-                
-                
-                <div class="pswp__preloader">
-                    <div class="pswp__preloader__icn">
-                        <div class="pswp__preloader__cut">
-                            <div class="pswp__preloader__donut"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                <div class="pswp__share-tooltip"></div>
-            </div>
-
-            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-            </button>
-
-            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-            </button>
-
-            <div class="pswp__caption">
-                <div class="pswp__caption__center"></div>
-            </div>
-
+          </div>
         </div>
-
+      </div>
     </div>
 
-</div><script 
-                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
-                defer
-                >
-            </script><script 
-                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
-                defer
-                >
-            </script><link 
-                rel="stylesheet" 
-                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
-            ><link 
-                rel="stylesheet" 
-                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
-            >
-
-            </main>
-        </div>
-        <script 
-                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
-                
-                >
-            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
-<script>
-    (function () {
-        const customFont = document.createElement('link');
-        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
-
-        customFont.type = "text/css";
-        customFont.rel = "stylesheet";
-
-        document.head.appendChild(customFont);
-    }());
+    <script>
+  window.lightTheme =  null 
+  window.darkTheme =  null 
 </script>
 
-    </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
 </html>

@@ -1,469 +1,630 @@
 <!DOCTYPE html>
-<html lang="en-us" dir="ltr">
-    <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Introduction: 이 블로그 포스트에서는 NEO65CU와 NEO60CU 키보드의 구성 요소와 빌드 과정에 대한 깊이 있는 분석을 제공합니다. 각 장치의 독특한 특징과 성능 향상 요소를 살펴보고, 조립 방법까지 알려드리겠습니다!\n가방 내용물 살펴보기 가방 내용물 확인하기 Summary: 가방의 내용물을 살펴보고 필요한 도구와 부품을 체크합니다.\n드라이버 규격 통일성 제공되는 드라이버 사이즈 통일 모든 나사 규격 통일 Summary: 제공되는 드라이버 사이즈로 인해 모든 나사 규격이 통일되어 작업 효율이 높아집니다.\n범폰 부착하기 범폰 부착 과정 Summary: 범폰을 먼저 부착하여 기본 구성을 마무리합니다.\n">
-<title>이색적인 키보드 빌드: NEO65CU 및 NEO60CU 마운트 해부하기</title>
+<html lang="en-us"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이색적인 키보드 빌드: NEO65CU 및 NEO60CU 마운트 해부하기 | YOUTUBE SUMMARY - TIL</title>
 
-<link rel='canonical' href='https://jawoongku.github.io/post/vewvwvew/'>
+    
 
-<link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="이색적인 키보드 빌드: NEO65CU 및 NEO60CU 마운트 해부하기">
-<meta property='og:description' content="Introduction: 이 블로그 포스트에서는 NEO65CU와 NEO60CU 키보드의 구성 요소와 빌드 과정에 대한 깊이 있는 분석을 제공합니다. 각 장치의 독특한 특징과 성능 향상 요소를 살펴보고, 조립 방법까지 알려드리겠습니다!\n가방 내용물 살펴보기 가방 내용물 확인하기 Summary: 가방의 내용물을 살펴보고 필요한 도구와 부품을 체크합니다.\n드라이버 규격 통일성 제공되는 드라이버 사이즈 통일 모든 나사 규격 통일 Summary: 제공되는 드라이버 사이즈로 인해 모든 나사 규격이 통일되어 작업 효율이 높아집니다.\n범폰 부착하기 범폰 부착 과정 Summary: 범폰을 먼저 부착하여 기본 구성을 마무리합니다.\n">
-<meta property='og:url' content='https://jawoongku.github.io/post/vewvwvew/'>
-<meta property='og:site_name' content='YOUTUBE SUMMARY - TIL'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-02-10T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-02-10T00:00:00&#43;00:00'/>
-<meta name="twitter:title" content="이색적인 키보드 빌드: NEO65CU 및 NEO60CU 마운트 해부하기">
-<meta name="twitter:description" content="Introduction: 이 블로그 포스트에서는 NEO65CU와 NEO60CU 키보드의 구성 요소와 빌드 과정에 대한 깊이 있는 분석을 제공합니다. 각 장치의 독특한 특징과 성능 향상 요소를 살펴보고, 조립 방법까지 알려드리겠습니다!\n가방 내용물 살펴보기 가방 내용물 확인하기 Summary: 가방의 내용물을 살펴보고 필요한 도구와 부품을 체크합니다.\n드라이버 규격 통일성 제공되는 드라이버 사이즈 통일 모든 나사 규격 통일 Summary: 제공되는 드라이버 사이즈로 인해 모든 나사 규격이 통일되어 작업 효율이 높아집니다.\n범폰 부착하기 범폰 부착 과정 Summary: 범폰을 먼저 부착하여 기본 구성을 마무리합니다.\n">
-    </head>
-    <body class="
-    article-page
-    ">
-    <script>
-        (function() {
-            const colorSchemeKey = 'StackColorScheme';
-            if(!localStorage.getItem(colorSchemeKey)){
-                localStorage.setItem(colorSchemeKey, "auto");
-            }
-        })();
-    </script><script>
-    (function() {
-        const colorSchemeKey = 'StackColorScheme';
-        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
-        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+<link rel="canonical" href="https://jawoongku.github.io/post/vewvwvew/" />
 
-        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
-            
 
-            document.documentElement.dataset.scheme = 'dark';
-        } else {
-            document.documentElement.dataset.scheme = 'light';
-        }
-    })();
-</script>
-<div class="container main-container flex on-phone--column compact"><aside class="sidebar left-sidebar sticky ">
-    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
-        <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-        </span>
-    </button>
 
-    <header>
-        
-            
-            <figure class="site-avatar">
-                <a href="/">
-                
-                    
-                    
-                    
-                        
-                        <img src="/img/avatar_hu_f509edb42ecc0ebd.png" width="300"
-                            height="300" class="site-logo" loading="lazy" alt="Avatar">
-                    
-                
-                </a>
-                
-            </figure>
-            
-        
-        
-        <div class="site-meta">
-            <h1 class="site-name"><a href="/">YOUTUBE SUMMARY - TIL</a></h1>
-            <h2 class="site-description"></h2>
+<meta name="author" content="" />
+<meta name="description" content="" />
+
+
+
+<meta name="generator" content="Hugo 0.143.1">
+
+
+<meta property="og:url" content="https://jawoongku.github.io/post/vewvwvew/">
+  <meta property="og:site_name" content="YOUTUBE SUMMARY - TIL">
+  <meta property="og:title" content="이색적인 키보드 빌드: NEO65CU 및 NEO60CU 마운트 해부하기">
+  <meta property="og:description" content="Introduction: 이 블로그 포스트에서는 NEO65CU와 NEO60CU 키보드의 구성 요소와 빌드 과정에 대한 깊이 있는 분석을 제공합니다. 각 장치의 독특한 특징과 성능 향상 요소를 살펴보고, 조립 방법까지 알려드리겠습니다!
+가방 내용물 살펴보기 가방 내용물 확인하기 Summary: 가방의 내용물을 살펴보고 필요한 도구와 부품을 체크합니다.
+드라이버 규격 통일성 제공되는 드라이버 사이즈 통일 모든 나사 규격 통일 Summary: 제공되는 드라이버 사이즈로 인해 모든 나사 규격이 통일되어 작업 효율이 높아집니다.
+범폰 부착하기 범폰 부착 과정 Summary: 범폰을 먼저 부착하여 기본 구성을 마무리합니다.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2025-02-10T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-02-10T00:00:00+00:00">
+
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="이색적인 키보드 빌드: NEO65CU 및 NEO60CU 마운트 해부하기">
+  <meta name="twitter:description" content="Introduction: 이 블로그 포스트에서는 NEO65CU와 NEO60CU 키보드의 구성 요소와 빌드 과정에 대한 깊이 있는 분석을 제공합니다. 각 장치의 독특한 특징과 성능 향상 요소를 살펴보고, 조립 방법까지 알려드리겠습니다!
+가방 내용물 살펴보기 가방 내용물 확인하기 Summary: 가방의 내용물을 살펴보고 필요한 도구와 부품을 체크합니다.
+드라이버 규격 통일성 제공되는 드라이버 사이즈 통일 모든 나사 규격 통일 Summary: 제공되는 드라이버 사이즈로 인해 모든 나사 규격이 통일되어 작업 효율이 높아집니다.
+범폰 부착하기 범폰 부착 과정 Summary: 범폰을 먼저 부착하여 기본 구성을 마무리합니다.">
+
+
+
+
+  
+
+<link rel="stylesheet" href="/css/output.min.css" />
+
+
+
+
+    
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav class="mt-4 lg:mt-8 py-4">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="Flip it!">
+        <div class="h-10 rounded-full">
+          <img src="/" alt="" />
         </div>
-    </header><ol class="menu" id="main-menu">
+      </div>
+
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
         
-        
-        <li class="menu-bottom-section">
-            <ol class="menu">
-
-                
-                    <li id="dark-mode-toggle">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="8" cy="12" r="2" />
-  <rect x="2" y="6" width="20" height="12" rx="6" />
-</svg>
 
 
 
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="16" cy="12" r="2" />
-  <rect x="2" y="6" width="20" height="12" rx="6" />
-</svg>
 
 
 
-                        <span>Dark Mode</span>
-                    </li>
-                
-            </ol>
-        </li>
-    </ol>
-</aside>
 
-    
 
-            <main class="main full-width">
-    <article class="main-article">
-    <header class="article-header">
 
-    <div class="article-details">
-    
 
-    <div class="article-title-wrapper">
-        <h2 class="article-title">
-            <a href="/post/vewvwvew/">이색적인 키보드 빌드: NEO65CU 및 NEO60CU 마운트 해부하기</a>
-        </h2>
-    
-        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </ul>
     </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
 
+      
+      
+
+      
+
+      
+      
+
+
+
+
+
+      
+      
+
+
+
+
+
+      
+      
+
+
+
+
+
+      
+      
+
+
+
+
+
+      
+      
+
+
+
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="lg:grid lg:grid-cols-4 gap-4 mt-4 px-4">
+  <div class="hidden lg:block">
     
-    
-    
-    
-    <footer class="article-time">
+  </div>
+
+  <div class="lg:col-span-2">
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="이색적인 키보드 빌드: NEO65CU 및 NEO60CU 마운트 해부하기">
+  <meta itemprop="description" content="Introduction: 이 블로그 포스트에서는 NEO65CU와 NEO60CU 키보드의 구성 요소와 빌드 과정에 대한 깊이 있는 분석을 제공합니다. 각 장치의 독특한 특징과 성능 향상 요소를 살펴보고, 조립 방법까지 알려드리겠습니다!
+가방 내용물 살펴보기 가방 내용물 확인하기 Summary: 가방의 내용물을 살펴보고 필요한 도구와 부품을 체크합니다.
+드라이버 규격 통일성 제공되는 드라이버 사이즈 통일 모든 나사 규격 통일 Summary: 제공되는 드라이버 사이즈로 인해 모든 나사 규격이 통일되어 작업 효율이 높아집니다.
+범폰 부착하기 범폰 부착 과정 Summary: 범폰을 먼저 부착하여 기본 구성을 마무리합니다.">
+  <meta itemprop="datePublished" content="2025-02-10T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-02-10T00:00:00+00:00">
+  <meta itemprop="wordCount" content="590">
+
+      <header>
+        <h1 itemprop="headline">이색적인 키보드 빌드: NEO65CU 및 NEO60CU 마운트 해부하기</h1>
+        <p class="text-sm">
+          
+            Monday, Feb 10, 2025
+          
+
+          | <span>3 minute read</span>
+
+          
+          | <span>Updated at
+            
+              Monday, Feb 10, 2025
+            </span>
+          
+        </p>
+
         
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
-  <circle cx="18" cy="18" r="4" />
-  <path d="M15 3v4" />
-  <path d="M7 3v4" />
-  <path d="M3 11h16" />
-  <path d="M18 16.496v1.504l1 1" />
-</svg>
-                <time class="article-time--published">Feb 10, 2025</time>
-            </div>
-        
+        <div class="flex justify-between">
+          
 
-        
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="12" r="9" />
-  <polyline points="12 7 12 12 15 15" />
-</svg>
+          <div class="flex items-center gap-2">
+  
+  
 
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%ec%9d%b4%ec%83%89%ec%a0%81%ec%9d%b8%20%ed%82%a4%eb%b3%b4%eb%93%9c%20%eb%b9%8c%eb%93%9c:%20NEO65CU%20%eb%b0%8f%20NEO60CU%20%eb%a7%88%ec%9a%b4%ed%8a%b8%20%ed%95%b4%eb%b6%80%ed%95%98%ea%b8%b0&amp;url=https://jawoongku.github.io/post/vewvwvew/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=https://jawoongku.github.io/post/vewvwvew/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%ec%9d%b4%ec%83%89%ec%a0%81%ec%9d%b8%20%ed%82%a4%eb%b3%b4%eb%93%9c%20%eb%b9%8c%eb%93%9c:%20NEO65CU%20%eb%b0%8f%20NEO60CU%20%eb%a7%88%ec%9a%b4%ed%8a%b8%20%ed%95%b4%eb%b6%80%ed%95%98%ea%b8%b0%20https://jawoongku.github.io/post/vewvwvew/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
 
-
-                <time class="article-time--reading">
-                    3 minute read
-                </time>
-            </div>
-        
-    </footer>
-    
-
-    
+  
+  
 </div>
 
-</header>
+        </div>
+      </header>
 
-    <section class="article-content">
-    
-    
-    <p><strong>Introduction:</strong> 이 블로그 포스트에서는 NEO65CU와 NEO60CU 키보드의 구성 요소와 빌드 과정에 대한 깊이 있는 분석을 제공합니다. 각 장치의 독특한 특징과 성능 향상 요소를 살펴보고, 조립 방법까지 알려드리겠습니다!</p>
-<h2 id="가방-내용물-살펴보기">가방 내용물 살펴보기
-</h2><ul>
+      <section id="dream-single-post-content" itemprop="articleBody">
+        
+
+        <p><strong>Introduction:</strong> 이 블로그 포스트에서는 NEO65CU와 NEO60CU 키보드의 구성 요소와 빌드 과정에 대한 깊이 있는 분석을 제공합니다. 각 장치의 독특한 특징과 성능 향상 요소를 살펴보고, 조립 방법까지 알려드리겠습니다!</p>
+<h2 id="가방-내용물-살펴보기">가방 내용물 살펴보기</h2>
+<ul>
 <li>가방 내용물 확인하기</li>
 </ul>
 <p><strong>Summary:</strong> 가방의 내용물을 살펴보고 필요한 도구와 부품을 체크합니다.</p>
-<h2 id="드라이버-규격-통일성">드라이버 규격 통일성
-</h2><ul>
+<h2 id="드라이버-규격-통일성">드라이버 규격 통일성</h2>
+<ul>
 <li>제공되는 드라이버 사이즈 통일</li>
 <li>모든 나사 규격 통일</li>
 </ul>
 <p><strong>Summary:</strong> 제공되는 드라이버 사이즈로 인해 모든 나사 규격이 통일되어 작업 효율이 높아집니다.</p>
-<h2 id="범폰-부착하기">범폰 부착하기
-</h2><ul>
+<h2 id="범폰-부착하기">범폰 부착하기</h2>
+<ul>
 <li>범폰 부착 과정</li>
 </ul>
 <p><strong>Summary:</strong> 범폰을 먼저 부착하여 기본 구성을 마무리합니다.</p>
-<h2 id="무게추-보호-필름">무게추 보호 필름
-</h2><ul>
+<h2 id="무게추-보호-필름">무게추 보호 필름</h2>
+<ul>
 <li>외부 무게추 보호 필름</li>
 <li>조심스럽게 제거</li>
 </ul>
 <p><strong>Summary:</strong> 외부 무게추에는 보호 필름이 붙어 있어 조심스럽게 제거해야 합니다.</p>
-<h2 id="키보드-무게-측정하기">키보드 무게 측정하기
-</h2><ul>
+<h2 id="키보드-무게-측정하기">키보드 무게 측정하기</h2>
+<ul>
 <li>키보드의 무게 측정</li>
 <li>구성 옵션에 따른 차이</li>
 </ul>
 <p><strong>Summary:</strong> 키보드의 무게를 측정하고, 다양한 옵션에 따른 무게의 차이를 알아봅니다.</p>
-<h2 id="무게-옵션-다양성">무게 옵션 다양성
-</h2><ul>
+<h2 id="무게-옵션-다양성">무게 옵션 다양성</h2>
+<ul>
 <li>여러 옵션</li>
 <li>구성에 따라 무게 차이</li>
 </ul>
 <p><strong>Summary:</strong> 옵션이 많고 구성에 따라 무게의 차이가 있으니 신중하게 선택해야 합니다.</p>
-<h2 id="무게-차이-실험">무게 차이 실험
-</h2><ul>
+<h2 id="무게-차이-실험">무게 차이 실험</h2>
+<ul>
 <li>구리+내부 무게추</li>
 <li>황동+배터리 무게 차이 측정</li>
 </ul>
 <p><strong>Summary:</strong> 구리와 황동의 내부 무게추에서 263g의 차이가 나며, 손에 들어보았을 때 체감하는 무게가 다릅니다.</p>
-<h2 id="neo-라인업-디자인">NEO 라인업 디자인
-</h2><ul>
+<h2 id="neo-라인업-디자인">NEO 라인업 디자인</h2>
+<ul>
 <li>NEO의 Cu 라인업</li>
 <li>디자인 추가된 요소들</li>
 </ul>
 <p><strong>Summary:</strong> NEO의 Cu 라인업은 Coarse 라인업에 비해 많은 선들이 추가되어 세련된 디자인을 자랑합니다.</p>
-<h2 id="아노다이징-퀄리티">아노다이징 퀄리티
-</h2><ul>
+<h2 id="아노다이징-퀄리티">아노다이징 퀄리티</h2>
+<ul>
 <li>NEO 아노다이징의 뛰어난 품질</li>
 </ul>
 <p><strong>Summary:</strong> NEO의 아노다이징은 가격 대비 매우 뛰어난 퀄리티를 보여줍니다.</p>
-<h2 id="하우징-세부-사항-보기">하우징 세부 사항 보기
-</h2><ul>
+<h2 id="하우징-세부-사항-보기">하우징 세부 사항 보기</h2>
+<ul>
 <li>하우징 내부</li>
 <li>디자인 디테일</li>
 </ul>
 <p><strong>Summary:</strong> 하우징을 열어 자세하게 살펴봅니다.</p>
-<h2 id="타이핑-소리-개선">타이핑 소리 개선
-</h2><ul>
+<h2 id="타이핑-소리-개선">타이핑 소리 개선</h2>
+<ul>
 <li>나사 결합 방식</li>
 <li>균일한 타이핑 소리 제공</li>
 </ul>
 <p><strong>Summary:</strong> 나사 결합 방식을 사용하여 보다 균일한 타이핑 소리를 제공합니다.</p>
-<h2 id="상판-나사홀-디자인">상판 나사홀 디자인
-</h2><ul>
+<h2 id="상판-나사홀-디자인">상판 나사홀 디자인</h2>
+<ul>
 <li>포스 브레이킹 패드 부착됨</li>
 </ul>
 <p><strong>Summary:</strong> 상판 나사홀에는 포스 브레이킹 패드가 부착되어 있어 안정성을 높입니다.</p>
-<h2 id="상단-마운트-및-pcb-개스킷">상단 마운트 및 PCB 개스킷
-</h2><ul>
+<h2 id="상단-마운트-및-pcb-개스킷">상단 마운트 및 PCB 개스킷</h2>
+<ul>
 <li>상단 마운트</li>
 <li>PCB 개스킷 구조 지원</li>
 </ul>
 <p><strong>Summary:</strong> 상단 마운트 및 PCB 개스킷 마운트를 지원하여 다양한 조립 옵션을 제공합니다.</p>
-<h2 id="소음-및-진동-감소">소음 및 진동 감소
-</h2><ul>
+<h2 id="소음-및-진동-감소">소음 및 진동 감소</h2>
+<ul>
 <li>구리와 황동 하판</li>
 <li>소리 및 진동 조절</li>
 </ul>
 <p><strong>Summary:</strong> 구리와 황동 하판은 챔퍼 라인을 가공하여 소리는 증가시키고 진동을 줄입니다.</p>
-<h2 id="하판-디자인-조화">하판 디자인 조화
-</h2><ul>
+<h2 id="하판-디자인-조화">하판 디자인 조화</h2>
+<ul>
 <li>구리와 황동의 색감 조화</li>
 </ul>
 <p><strong>Summary:</strong> 구리와 황동 하판의 따뜻한 색상은 바닥의 곡선 라인과 잘 어울립니다.</p>
-<h2 id="로고-디자인-및-구조">로고 디자인 및 구조
-</h2><ul>
+<h2 id="로고-디자인-및-구조">로고 디자인 및 구조</h2>
+<ul>
 <li>하판 로고 디자인</li>
 <li>레이어 구조</li>
 </ul>
 <p><strong>Summary:</strong> 하판의 로고는 두 개의 심볼과 외부 무게추가 레이어되는 구조로 디자인되었습니다.</p>
-<h2 id="후면-디자인-구조">후면 디자인 구조
-</h2><ul>
+<h2 id="후면-디자인-구조">후면 디자인 구조</h2>
+<ul>
 <li>레이어 구조 설명</li>
 </ul>
 <p><strong>Summary:</strong> 후면 디자인은 상판, 하판, 외부 무게추, 범폰 순서로 층이 올라가는 구조로 이루어져 있습니다.</p>
-<h2 id="내부-서스-무게추">내부 서스 무게추
-</h2><ul>
+<h2 id="내부-서스-무게추">내부 서스 무게추</h2>
+<ul>
 <li>가공결 강조</li>
 </ul>
 <p><strong>Summary:</strong> 내부 서스 무게추는 전면에서 가공결이 보이는 형태로 제작되었습니다.</p>
-<h2 id="pcb-색상-옵션">PCB 색상 옵션
-</h2><ul>
+<h2 id="pcb-색상-옵션">PCB 색상 옵션</h2>
+<ul>
 <li>다른 색상의 PCB 제공</li>
 </ul>
 <p><strong>Summary:</strong> Cu 라인은 이제 다른 색상의 PCB도 제공합니다.</p>
-<h2 id="가스켓-및-보강판-마운팅">가스켓 및 보강판 마운팅
-</h2><ul>
+<h2 id="가스켓-및-보강판-마운팅">가스켓 및 보강판 마운팅</h2>
+<ul>
 <li>7u 기준 제작</li>
 <li>7u 레이아웃 추천</li>
 </ul>
 <p><strong>Summary:</strong> 가스켓의 위치와 보강판의 마운팅 포인트를 보면 해당 하우징이 7u를 기준으로 제작되었음을 알아볼 수 있습니다.</p>
-<h2 id="보강판-소재">보강판 소재
-</h2><ul>
+<h2 id="보강판-소재">보강판 소재</h2>
+<ul>
 <li>강한 소재 사용</li>
 <li>스페이스바 공간 확보</li>
 </ul>
 <p><strong>Summary:</strong> 카본과 알루미늄과 같은 단단한 소재의 보강판은 스페이스바의 공간을 더 넓게 제작했습니다.</p>
-<h2 id="제공되는-폼-수량">제공되는 폼 수량
-</h2><ul>
+<h2 id="제공되는-폼-수량">제공되는 폼 수량</h2>
+<ul>
 <li>두 개의 폼 제공</li>
 <li>총 3개로 구성</li>
 </ul>
 <p><strong>Summary:</strong> PCB와 함께 제공되는 폼은 2개이며 케이스와 함께 제공되는 폼을 포함하여 총 3개입니다.</p>
-<h2 id="무선-pcb-구성">무선 PCB 구성
-</h2><ul>
+<h2 id="무선-pcb-구성">무선 PCB 구성</h2>
+<ul>
 <li>USB 동글 포함</li>
 </ul>
 <p><strong>Summary:</strong> 무선 PCB에는 USB 동글도 포함되어 있습니다.</p>
-<h2 id="빌드-시작하기">빌드 시작하기
-</h2><ul>
+<h2 id="빌드-시작하기">빌드 시작하기</h2>
+<ul>
 <li>본격적인 조립 시작</li>
 </ul>
 <p><strong>Summary:</strong> 이제 본격적으로 빌드를 시작해 보겠습니다.</p>
-<h2 id="neo65cu-빌드">NEO65CU 빌드
-</h2><ul>
+<h2 id="neo65cu-빌드">NEO65CU 빌드</h2>
+<ul>
 <li>MX Black 빌드</li>
 <li>황동과 구리 바닥 조합</li>
 </ul>
 <p><strong>Summary:</strong> NEO65CU 빌드는 MX Black 키 스위치로 황동과 구리 바닥이 조화를 이루어 차이점을 보여줍니다.</p>
-<h2 id="neo60cu-빌드">NEO60CU 빌드
-</h2><ul>
+<h2 id="neo60cu-빌드">NEO60CU 빌드</h2>
+<ul>
 <li>솔더 PCB에서 무보강 조립</li>
 </ul>
 <p><strong>Summary:</strong> NEO60CU 빌드는 솔더 PCB에서만 가능한 무보강 방식으로 조립할 것입니다.</p>
-<h2 id="스테빌라이저-사용">스테빌라이저 사용
-</h2><ul>
+<h2 id="스테빌라이저-사용">스테빌라이저 사용</h2>
+<ul>
 <li>Swagkeys의 Knight Stabilizer V3 사용</li>
 </ul>
 <p><strong>Summary:</strong> 저는 Swagkeys의 Knight Stabilizer V3를 사용하여 안정성을 높였습니다.</p>
-<h2 id="상단-장착-가스킷-기능">상단 장착 가스킷 기능
-</h2><ul>
+<h2 id="상단-장착-가스킷-기능">상단 장착 가스킷 기능</h2>
+<ul>
 <li>보강판에 안전하게 고정</li>
 </ul>
 <p><strong>Summary:</strong> 상단 장착 가스킷은 보강판에 홀이 있어 일단 배치하면 안전하게 고정됩니다.</p>
-<h2 id="조립-단계">조립 단계
-</h2><ul>
+<h2 id="조립-단계">조립 단계</h2>
+<ul>
 <li>상판 결합 시 주의사항</li>
 </ul>
 <p><strong>Summary:</strong> 탑 마운트 사용 시 기보강을 상판에 결합할 때는 마그네틱 커넥터가 있는 방향으로 먼저 밀어 넣는 것이 조립에 수월합니다.</p>
-<h2 id="상판-나사홀-맞추기">상판 나사홀 맞추기
-</h2><ul>
+<h2 id="상판-나사홀-맞추기">상판 나사홀 맞추기</h2>
+<ul>
 <li>나사홀 위치 조정</li>
 </ul>
 <p><strong>Summary:</strong> 상판의 나사홀 위치를 맞추어 결합하여 안정적인 조립을 완성합니다.</p>
 <p><strong>Tags:</strong> #NEO65CU #NEO60CU #키보드 #조립 방법 #부품 상세</p>
 
-</section>
 
-
-    <footer class="article-footer">
-    
-
-    </footer>
-
-
-    
-</article>
-
-    
-
-    
-
-     
-    
         
-    
+      </section>
 
-    <footer class="site-footer">
-    <section class="copyright">
-        &copy; 
-        
-        2025 YOUTUBE SUMMARY - TIL
-    </section>
+      
+
+      
+    </article>
+  </div>
+
+  <div class="hidden lg:flex lg:flex-col lg:items-end">
     
-    <section class="powerby">
-        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
-    </section>
+  </div>
+</div>
+
+
+            
+<footer class="flex justify-between items-center gap-2 px-4 py-12">
+
+  <div>
+  
+  <p>© 2025 YOUTUBE SUMMARY - TIL</p>
+  
+
+  
+  <p class="text-sm">
+    🌱
+    <span class="text-base-content/60">
+      Powered by <a class="hover:underline" href="https://gohugo.io/" target="_blank">Hugo</a> with theme
+      <a class="hover:underline" href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</span
+    >
+  </p>
+  
+</div>
+
+  <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center gap-2 h-[32px] px-2 bg-base-100 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
 </footer>
 
-
-    
-<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-    
-    <div class="pswp__bg"></div>
-
-    
-    <div class="pswp__scroll-wrap">
-
-        
-        <div class="pswp__container">
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
+          </div>
         </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid dream-grid-about">
+  
 
-        
-        <div class="pswp__ui pswp__ui--hidden">
+  
 
-            <div class="pswp__top-bar">
+  
+</div>
 
-                
+            
 
-                <div class="pswp__counter"></div>
+            
+<footer class="flex justify-between items-center gap-2 px-4 py-12">
 
-                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+  <div>
+  
+  <p>© 2025 YOUTUBE SUMMARY - TIL</p>
+  
 
-                <button class="pswp__button pswp__button--share" title="Share"></button>
+  
+  <p class="text-sm">
+    🌱
+    <span class="text-base-content/60">
+      Powered by <a class="hover:underline" href="https://gohugo.io/" target="_blank">Hugo</a> with theme
+      <a class="hover:underline" href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</span
+    >
+  </p>
+  
+</div>
 
-                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+  <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center gap-2 h-[32px] px-2 bg-base-100 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
 
-                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+</footer>
 
-                
-                
-                <div class="pswp__preloader">
-                    <div class="pswp__preloader__icn">
-                        <div class="pswp__preloader__cut">
-                            <div class="pswp__preloader__donut"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                <div class="pswp__share-tooltip"></div>
-            </div>
-
-            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-            </button>
-
-            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-            </button>
-
-            <div class="pswp__caption">
-                <div class="pswp__caption__center"></div>
-            </div>
-
+          </div>
         </div>
-
+      </div>
     </div>
 
-</div><script 
-                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
-                defer
-                >
-            </script><script 
-                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
-                defer
-                >
-            </script><link 
-                rel="stylesheet" 
-                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
-            ><link 
-                rel="stylesheet" 
-                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
-            >
-
-            </main>
-        </div>
-        <script 
-                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
-                
-                >
-            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
-<script>
-    (function () {
-        const customFont = document.createElement('link');
-        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
-
-        customFont.type = "text/css";
-        customFont.rel = "stylesheet";
-
-        document.head.appendChild(customFont);
-    }());
+    <script>
+  window.lightTheme =  null 
+  window.darkTheme =  null 
 </script>
 
-    </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+    
+  
+  <script src="/js/grid.min.js"></script>
+
+
+
+
+  
+
+<script src="/js/main.min.js"></script>
+
+    
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
 </html>
